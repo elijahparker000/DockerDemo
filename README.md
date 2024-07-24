@@ -36,3 +36,6 @@ The second command actually runs the container. If all is well, you should see t
 
 Click the button for an inside joke :)
 
+
+### One last thing:
+You might notice that the window that pops up is a little weird looking. I'm pretty sure that's because this is *actually* running on Ubuntu. So it's sort of evidence of it working, ya know? So like I said earlier, in theory, you can run these same commands on any machine that supports Docker and it will look and act the exact same. 
