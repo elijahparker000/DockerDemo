@@ -4,6 +4,6 @@ This repo shows the basics of Docker by letting you run a container that shows a
 ## Clone the repo
 Assuming you already have git installed (if not, go do that. It's easy), navigate to where you would like to put this code, and run this command:
 
-'''
+```
 git clone https://github.com/elijahparker000/DockerDemo.git
-'''
+```
