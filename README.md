@@ -21,4 +21,18 @@ Finally, navigate to this link:
 
 https://docs.docker.com/desktop/install/windows-install/
 
-and install Docker. Docker allows us to build containers that the code runs inside. In theory, any system that supports Docker will run any given Docker container in the exact same way which would be great for us as we develop software.
+and install Docker. Docker allows us to build containers that the code runs inside. In theory, any system that supports Docker will run any given Docker container in the exact same way which would be great for us as we develop software. Once you've installed Docker, navigate to the directory with all of this code in it and run the following commands on your terminal:
+
+```
+docker build -t my_python_app .
+docker run -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/dri --device /dev/video0 --privileged my_python_app
+```
+
+The first command builds the Dockerfile. It'll take a minute to run, and you'll see lots of blue text on the terminal as it goes through all the steps. It'll put a basic version of Ubuntu in the container, install Python in the container, install necessary Python libraries in the container, and a couple other things. 
+
+The second command actually runs the container. If all is well, you should see this:
+
+<img width="219" alt="GUI" src="https://github.com/user-attachments/assets/17bb6383-63b6-4afa-b180-e451808d1453">
+
+Click the button for an inside joke :)
+
