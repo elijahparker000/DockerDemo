@@ -25,6 +25,8 @@ and install Docker. Docker allows us to build containers that the code runs insi
 
 ```
 docker build -t my_python_app .
+```
+```
 docker run -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/dri --device /dev/video0 --privileged my_python_app
 ```
 
